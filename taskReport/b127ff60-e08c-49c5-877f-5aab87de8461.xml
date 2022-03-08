@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<taskReportHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>8dd2940b-8df4-4dab-92bd-59e32e7d003f</versionUuid>
+    <taskReport a:uuid="b127ff60-e08c-49c5-877f-5aab87de8461" name="SP1 VM My Tasks Report">
+        <a:description>Report object for task report</a:description>
+        <a:uiExpr>=#"_a-0000e6dc-9616-8000-9ba5-011c48011c48_41585"()</a:uiExpr>
+        <a:urlStub>xh4r9A</a:urlStub>
+    </taskReport>
+    <roleMap>
+        <role name="report_administrator">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_860</groupUuid>
+            </groups>
+        </role>
+        <role name="report_viewer">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_858</groupUuid>
+            </groups>
+        </role>
+        <role name="report_editor">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_862</groupUuid>
+            </groups>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="8dd2940b-8df4-4dab-92bd-59e32e7d003f"/>
+    </history>
+</taskReportHaul>

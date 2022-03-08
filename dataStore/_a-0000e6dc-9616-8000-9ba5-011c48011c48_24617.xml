@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataStoreHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_58001</versionUuid>
+    <dataStore>
+        <uuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_24617</uuid>
+        <name>SP1 VM MariaDB Data Store</name>
+        <description>Pointer to the physical location of the vehicle data</description>
+        <dataSourceKey>jdbc/Appian</dataSourceKey>
+        <adaptingExplicitSqlNames>false</adaptingExplicitSqlNames>
+        <autoUpdateSchema>false</autoUpdateSchema>
+        <entities>
+            <entity>
+                <uuid>dba75a81-7f85-44bc-9a9a-46c388ffc219</uuid>
+                <name>SP1_vm_vehicles</name>
+                <type>{urn:com:appian:types:SP:VM}SP1_df_vm_vehicles</type>
+            </entity>
+            <entity>
+                <uuid>4bf6c804-da82-4586-bab9-72a1a89bc543</uuid>
+                <name>SP1_df_vm_vehicle_update</name>
+                <type>{urn:com:appian:types}SP1_df_vm_vehicle_update</type>
+            </entity>
+        </entities>
+    </dataStore>
+    <isPublished>true</isPublished>
+    <roleMap>
+        <role inherit="false" allowForAll="false" name="administrators">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_860</groupUuid>
+            </groups>
+        </role>
+        <role inherit="false" allowForAll="false" name="authors">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_862</groupUuid>
+            </groups>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="readers">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_858</groupUuid>
+            </groups>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e6dc-9616-8000-9ba5-011c48011c48_58001"/>
+    </history>
+</dataStoreHaul>

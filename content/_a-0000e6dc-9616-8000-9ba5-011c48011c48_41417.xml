@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_41489</versionUuid>
+    <rule>
+        <name>SP1_VM_PieVehicleByAvailability</name>
+        <uuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_41417</uuid>
+        <description>Interface for Pie Chart report by Vehicle Availability</description>
+        <parentUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_23913</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>{
+  #"SYSTEM_SYSRULES_pieChartField"(
+    data: #"urn:appian:record-type:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e",
+    config: #"SYSTEM_SYSRULES_pieChartConfig"(
+      primaryGrouping: #"SYSTEM_SYSRULES_grouping"(
+        field: #"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/8dd34db1-c023-4ced-b92a-ae7c15b7e5fe",
+        alias: "isAvailable_primaryGrouping"
+      ),
+      measures: {
+        #"SYSTEM_SYSRULES_measure"(
+          function: "COUNT",
+          field: #"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/8fd3e035-ea85-4f83-810e-dc386cae4b94",
+          alias: "vehicleId_count_measure1"
+        )
+      },
+      dataLimit: 100
+    ),
+    label: "Distribution of Vehicles by Availability",
+    labelPosition: "ABOVE",
+    colorScheme: "CLASSIC",
+    style: "DONUT",
+    seriesLabelStyle: "ON_CHART",
+    height: "MEDIUM"
+  )
+}</definition>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e6dc-9616-8000-9ba5-011c48011c48_41489"/>
+    </history>
+</contentHaul>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_57957</versionUuid>
+    <rule>
+        <name>SP1_VM_VehicleDetails</name>
+        <uuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_25346</uuid>
+        <description>This is the interface for vehicle details</description>
+        <parentUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_19218</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>#"SYSTEM_SYSRULES_boxLayout"(
+  label: "Details",
+  contents: {
+    #"SYSTEM_SYSRULES_sideBySideLayout"(
+      items: {
+        #"SYSTEM_SYSRULES_sideBySideItem"(
+          item: #"SYSTEM_SYSRULES_integerField"(
+            label: "Mileage",
+            labelPosition: "ABOVE",
+            value: ri!SP1_VM_Vehicle.mileage,
+            saveInto: ri!SP1_VM_Vehicle.mileage,
+            required: true,
+            requiredMessage: "Please Enter a Value"
+          )
+        ),
+        #"SYSTEM_SYSRULES_sideBySideItem"(
+          item: #"SYSTEM_SYSRULES_integerField"(
+            label: "Year Built",
+            value: ri!SP1_VM_Vehicle.yearBuilt,
+            saveInto: ri!SP1_VM_Vehicle.yearBuilt,
+            required: true,
+            requiredMessage: "Please Enter a Value"
+          )
+        )
+      }
+    ),
+    #"SYSTEM_SYSRULES_sideBySideLayout"(
+      items: {
+        #"SYSTEM_SYSRULES_sideBySideItem"(
+          item: #"SYSTEM_SYSRULES_dropdownField_v1"(
+            label: "Type",
+            labelPosition: "ABOVE",
+            placeholder: "--- Select a Type ---",
+            choiceLabels: #"_a-0000e6dc-9616-8000-9ba5-011c48011c48_24719",
+            choiceValues: #"_a-0000e6dc-9616-8000-9ba5-011c48011c48_24719",
+            value: ri!SP1_VM_Vehicle.type,
+            saveInto: ri!SP1_VM_Vehicle.type,
+            searchDisplay: "AUTO",
+            validations: {}
+          )
+        ),
+        #"SYSTEM_SYSRULES_sideBySideItem"(
+          item: #"SYSTEM_SYSRULES_textField"(
+            label: "Color",
+            value: ri!SP1_VM_Vehicle.color,
+            saveInto: ri!SP1_VM_Vehicle.color,
+            characterLimit: 50
+          )
+        )
+      }
+    )
+  },
+  style: "STANDARD",
+  marginBelow: "STANDARD"
+)</definition>
+        <namedTypedValue>
+            <name>SP1_VM_Vehicle</name>
+            <type>
+                <name>SP1_df_vm_vehicles</name>
+                <namespace>urn:com:appian:types:SP:VM</namespace>
+            </type>
+        </namedTypedValue>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e6dc-9616-8000-9ba5-011c48011c48_57957"/>
+    </history>
+</contentHaul>

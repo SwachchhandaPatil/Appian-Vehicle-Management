@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_57925</versionUuid>
+    <rule>
+        <name>SP1_VM_SummaryView</name>
+        <uuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_24304</uuid>
+        <description>This is an interface</description>
+        <parentUuid>_a-0000e6dc-9616-8000-9ba5-011c48011c48_19218</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>{
+  #"SYSTEM_SYSRULES_columnsLayout"(
+    columns: {
+      #"SYSTEM_SYSRULES_columnLayout"(
+        contents: {
+          #"SYSTEM_SYSRULES_imageField_v1"(
+            label: "Image",
+            labelPosition: "ABOVE",
+            images: {
+              #"SYSTEM_SYSRULES_documentImage"(
+                document: if(
+                  isnull(ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/4a47ffe9-0a0b-4d73-b106-95661b8a738d"]),
+                  #"SYSTEM_SYSRULES_EXAMPLE_DOCUMENT_IMAGE"(),
+                  ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/4a47ffe9-0a0b-4d73-b106-95661b8a738d"]) 
+              )
+            },
+            size: "MEDIUM",
+            isThumbnail: false,
+            style: "STANDARD"
+          )
+        }
+      ),
+      #"SYSTEM_SYSRULES_columnLayout"(
+        contents: {
+          #"SYSTEM_SYSRULES_integerField"(
+            label: "Year",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/05e6f241-c9e6-4cf6-86e4-88d55e8c67f9"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Model",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/043737a3-f397-4ac7-8a13-ece526dbd29f"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Type",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/a0fb963c-3d9f-4061-81a1-af3b92b1520d"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Color",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/19bcb2d0-9c38-4adc-9ba4-b7da41761f3e"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_richTextDisplayField"(
+            label: "",
+            labelPosition: "COLLAPSED",
+            value: {
+              #"_a-0000e6dc-9616-8000-9ba5-011c48011c48_24069"(
+                ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/8dd34db1-c023-4ced-b92a-ae7c15b7e5fe"]
+              )
+            },
+            align: "CENTER"
+          )
+        }
+      ),
+      #"SYSTEM_SYSRULES_columnLayout"(
+        contents: {
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Make",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/249796dc-2883-4b2f-ae80-0b095037c6da"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Mileage",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/b390541d-650c-4c39-a33a-52708c5cc795"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Vin",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/fb7b3948-2ab5-4d84-a492-766b04a69e98"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_textField"(
+            label: "Added By",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/e1fe48fc-b61d-4359-9287-1bc9caa78f33"],
+            saveInto: {},
+            refreshAfter: "UNFOCUS",
+            readOnly: true,
+            validations: {}
+          ),
+          #"SYSTEM_SYSRULES_dateField"(
+            label: "Added On",
+            labelPosition: "ADJACENT",
+            value: ri!vehicle[#"urn:appian:record-field:v1:3da7c1f8-8b59-467c-8c76-6e51fdaa062e/7efe93a0-d2ec-4787-b9e6-56d114668d8b"],
+            saveInto: {},
+            readOnly: true,
+            validations: {}
+          )
+        }
+      )
+    }
+  )
+}</definition>
+        <namedTypedValue>
+            <name>vehicle</name>
+            <type>
+                <name>3da7c1f8-8b59-467c-8c76-6e51fdaa062e</name>
+                <namespace>urn:com:appian:recordtype:datatype</namespace>
+            </type>
+        </namedTypedValue>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e6dc-9616-8000-9ba5-011c48011c48_57925"/>
+    </history>
+</contentHaul>

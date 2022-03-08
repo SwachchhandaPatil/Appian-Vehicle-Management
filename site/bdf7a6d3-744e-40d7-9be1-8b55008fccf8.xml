@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siteHaul xmlns:a="http://www.appian.com/ae/types/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <versionUuid>fc11445f-8885-4e4b-8c15-1726d1e7a94e</versionUuid>
+  <site a:uuid="bdf7a6d3-744e-40d7-9be1-8b55008fccf8" name="SP1 INI Vehicle Management">
+    <description>This is Site</description>
+    <urlStub>sp1-ini-vehicle-management</urlStub>
+    <page>
+      <staticName>SP1 Vehicle Fleet</staticName>
+      <description/>
+      <urlStub>sp1-vehicle-fleet</urlStub>
+      <uiObject a:uuid="3da7c1f8-8b59-467c-8c76-6e51fdaa062e" xsi:type="a:RecordType"/>
+      <iconId>f00b</iconId>
+      <visibilityExpr>fn!true()</visibilityExpr>
+      <pageWidth>WIDE</pageWidth>
+    </page>
+    <page>
+      <staticName>SP1 Vehicle Fleet Report</staticName>
+      <description/>
+      <urlStub>sp1-vehicle-fleet-report</urlStub>
+      <uiObject a:uuid="f476bceb-2c5f-42ef-be97-47f0ead9bb7e" xsi:type="a:TempoReport"/>
+      <iconId>f080</iconId>
+      <visibilityExpr>fn!true()</visibilityExpr>
+      <pageWidth>WIDE</pageWidth>
+    </page>
+    <page>
+      <staticName>SP1 My Tasks</staticName>
+      <description/>
+      <urlStub>sp1-my-tasks</urlStub>
+      <uiObject a:uuid="b127ff60-e08c-49c5-877f-5aab87de8461" xsi:type="a:TaskReport"/>
+      <iconId>f022</iconId>
+      <visibilityExpr>fn!true()</visibilityExpr>
+      <pageWidth>WIDE</pageWidth>
+    </page>
+    <page>
+      <staticName>Maintenance</staticName>
+      <description/>
+      <urlStub>maintenance</urlStub>
+      <uiObject a:uuid="6f70d5d5-0b6f-4dc9-af35-9dc64bfcbb05" xsi:type="a:RecordType"/>
+      <iconId>f085</iconId>
+      <visibilityExpr>fn!true()</visibilityExpr>
+      <pageWidth>WIDE</pageWidth>
+    </page>
+    <visibility>268435456</visibility>
+    <faviconRef a:uuid="SYSTEM_CONTENT_SITES_DEFAULT_FAVICON" xsi:type="a:CollaborationDocument"/>
+    <logoRef a:uuid="SYSTEM_CONTENT_SITES_DEFAULT_LOGO" xsi:type="a:CollaborationDocument"/>
+    <showName>false</showName>
+    <tempoLinkVisibility>HIDDEN</tempoLinkVisibility>
+    <showRecordNews>true</showRecordNews>
+    <tasksInSitesVisibility>HIDDEN</tasksInSitesVisibility>
+    <buttonShape>SQUARED</buttonShape>
+    <navigationBarStyle>STYLE1</navigationBarStyle>
+    <inputShape>SQUARED</inputShape>
+    <isSystem>false</isSystem>
+  </site>
+  <roleMap>
+    <role name="site_administrator">
+      <users/>
+      <groups>
+        <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_860</groupUuid>
+      </groups>
+    </role>
+    <role name="site_viewer">
+      <users/>
+      <groups>
+        <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_858</groupUuid>
+      </groups>
+    </role>
+  </roleMap>
+  <history>
+    <historyInfo versionUuid="fc11445f-8885-4e4b-8c15-1726d1e7a94e"/>
+  </history>
+</siteHaul>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tempoReportHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>ab49efd8-ccdc-4ce1-9bec-b8f21debf107</versionUuid>
+    <tempoReport a:uuid="cb0af0b9-4f7d-4751-abd5-b4da8dd07958" name="SP1 VM Vehicle Grid by Type">
+        <a:description>Report object for the grid by type interface</a:description>
+        <a:uiExpr>=#"_a-0000e6dc-9616-8000-9ba5-011c48011c48_42505"()</a:uiExpr>
+        <a:urlStub>z5gzjQ</a:urlStub>
+    </tempoReport>
+    <roleMap>
+        <role name="report_administrator">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_860</groupUuid>
+            </groups>
+        </role>
+        <role name="report_viewer">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_858</groupUuid>
+            </groups>
+        </role>
+        <role name="report_editor">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_862</groupUuid>
+            </groups>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="ab49efd8-ccdc-4ce1-9bec-b8f21debf107"/>
+    </history>
+</tempoReportHaul>

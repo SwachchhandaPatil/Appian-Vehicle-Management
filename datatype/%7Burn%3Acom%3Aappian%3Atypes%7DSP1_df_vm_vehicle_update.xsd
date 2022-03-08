@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="urn:com:appian:types"
+  xmlns:tns="urn:com:appian:types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="SP1_df_vm_vehicle_update">
+    <xsd:annotation>
+      <xsd:appinfo source="appian.jpa">@Table(name="SP1_df_vm_vehicle_update")</xsd:appinfo>
+      <xsd:appinfo source="http://www.appian.com/ae/types/2009">
+        <ns2:Metadata xmlns:ns2="http://www.appian.com/ae/types/2009">
+          <ns2:versionUuid>0000e719-ede7-8000-03cb-7f0000014e7a</ns2:versionUuid>
+          <ns2:history>
+            <ns2:historyInfo versionUuid="0000e719-ede7-8000-03cb-7f0000014e7a"/>
+          </ns2:history>
+        </ns2:Metadata>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="maintenanceId" nillable="true" type="xsd:int">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Id @GeneratedValue @Column(name="maintenance_id", nullable=false, unique=true, columnDefinition="INT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="vehicleId" nillable="true" type="xsd:int">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="vehicle_id",  columnDefinition="INT") @JoinColumn(name="vehicle_id")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="cost" nillable="true" type="xsd:int">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="cost",  columnDefinition="INT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="description" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="description",  columnDefinition="TEXT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="requestaddedby" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="requestAddedBy",  columnDefinition="TEXT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="requestaddedon" nillable="true" type="xsd:dateTime">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="requestAddedOn",  columnDefinition="DATETIME")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="reqservicedby" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="reqServicedBy", columnDefinition="TEXT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="reqservicedon" nillable="true" type="xsd:dateTime">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="reqServicedOn",  columnDefinition="DATETIME")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="servicetype" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="serviceType",  columnDefinition="TEXT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="mechaniccomments" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="mechanic_comments",  columnDefinition="TEXT")</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

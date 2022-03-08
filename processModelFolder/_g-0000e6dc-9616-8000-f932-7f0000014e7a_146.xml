@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<processModelFolderHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_g-0000e6dc-9616-8000-f932-7f0000014e7a_241</versionUuid>
+    <processModelFolder>
+        <name>SP1 VM Process Models</name>
+        <uuid>_g-0000e6dc-9616-8000-f932-7f0000014e7a_146</uuid>
+        <description>This is Process Model Folder Type</description>
+    </processModelFolder>
+    <roleMap>
+        <role name="ADMIN_OWNER">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_860</groupUuid>
+            </groups>
+        </role>
+        <role name="EDITOR">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_862</groupUuid>
+            </groups>
+        </role>
+        <role name="EXPLICIT_NONMEMBER">
+            <users/>
+            <groups/>
+        </role>
+        <role name="VIEWER">
+            <users/>
+            <groups>
+                <groupUuid>_e-0000e6dc-9616-8000-9af2-01075c01075c_858</groupUuid>
+            </groups>
+        </role>
+        <role name="MANAGER">
+            <users/>
+            <groups/>
+        </role>
+        <role name="INITIATOR">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_g-0000e6dc-9616-8000-f932-7f0000014e7a_241"/>
+    </history>
+</processModelFolderHaul>
